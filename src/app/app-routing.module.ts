@@ -4,6 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { GenreComponent } from './master/genre/genre.component';
+import { AddComponent } from './master/genre/add/add.component';
 
 const routes: Routes = [
   {
@@ -24,7 +25,10 @@ const routes: Routes = [
   {
     path: 'genre',
     component: GenreComponent,
-    pathMatch: 'full',
+  },
+  {
+    path: 'add-genre',
+    component: AddComponent,
   },
   { path: 'not-found', component: PageNotFoundComponent },
   { path: '**', redirectTo: '/not-found' },
